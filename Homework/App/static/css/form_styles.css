@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+.form
+{   
+    background-color: #858585;
+    height: 919px;
+}
+
+.form_container
+{
+    padding-top: 150px;
+}
+
+.form__block
+{
+    width: 350px;
+    height: 585px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.from__block__container
+{
+    width: 250px;
+    margin: 0 auto;
+}
+
+.form__block__title
+{   
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 21px;
+    padding-left: 21px;
+}
+
+.form__block__input__name
+{
+    color: #545454;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 25px;
+}
+
+.form__block__input
+{
+    width: 235px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-left: 15px;
+    outline: none;
+
+    color: #545454;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form__block__text
+{   
+    padding-top: 35px;
+    color: #545454;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form__block__button
+{
+    display: flex;
+    width: 250px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #E2E2E2 0%, #8E8E8E 100%);
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding-left: 78px;
+    padding-top: 1px;
+
+    margin-top: 25px;
+}
+
+.form__add__form__block__button
+{
+   margin-top: 100px;
+}

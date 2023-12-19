@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data Base</title>
+    <link rel="stylesheet" href="{% static 'css/form_index_styles.css' %}">
+</head>
+<body>
+    <section class="form">
+        <div class="form__container">
+            <div class="form__block">
+                <div class="form__block__container">
+                    <h2 class="form__block__title">Введите индекс</h2>
+
+                    <form method="POST" action="{% url 'form_edit' %}">
+                    {% csrf_token %}
+                        <h3 class="form__block__input__name">Индекс в БД</h3>
+                        {{ form_index.index }}
+                        <input class="form__block__button" type="submit" value="Продолжить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

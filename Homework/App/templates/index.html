@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Data Base</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <section class="database">
+        <div class="container">
+            <div class="database__block">
+
+                <div class="database__topblock">
+                    <div class="database__topblock__titles">
+                        <h2 class="database__titles__h2">Почта</h2>
+                        <h2 class="database__titles__h2">Пароль</h2>
+                        <h2 class="database__titles__h2">Логин</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="database__wrap">
+                {% for i in list %}
+                <div class="database__wrap__line">
+                    <div class="database__wrap__line__block">
+                        <h2 class="database__wrap__line__block__text">{{ i.email }}</h2>
+                    </div>
+
+                    <div class="database__wrap__line__block">
+                        <h2 class="database__wrap__line__block__text">{{ i.password }}</h2>
+                    </div>
+
+                    <div class="database__wrap__line__block">
+                        <h2 class="database__wrap__line__block__text">{{ i.login }}</h2>
+                    </div>
+
+                    <div class="database__wrap__line__smallblock">
+                        <a href="{% url 'form_edit' %}" class="database__wrap__line__smallblock__button"><img src="{% static 'images/edit_png.png' %}" class="database__wrap__line__smallblock__ico" alt="/"></a>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Data Base Form</title>
+    <link rel="stylesheet" href="{% static 'css/form_styles.css' %}">
+</head>
+<body>
+    
+    <section class="form">
+        <div class="form_container">
+            <div class="form__block">
+                <div class="from__block__container">
+                    <h2 class="form__block__title">Редактировать</h2>
+
+                    <form method="POST">
+                    {% csrf_token %}
+                        <h3 class="form__block__input__name">Email</h3>
+                        {{ form_edit.email }}
+
+                        <h3 class="form__block__input__name">Пароль</h3>
+                        {{ form_edit.password }}
+
+                        <h3 class="form__block__input__name">Логин</h3>
+                        {{ form_edit.login }}
+
+                        <h3 class="form__block__input__name">Индекс в БД</h3>
+                        {{ form_edit.index }}
+
+                        <p class="form__block__text">Если в поле ничего не написать,<br>будет получено Undefined.</p>
+
+                        <input class="form__block__button" type="submit" value="Сохранить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
